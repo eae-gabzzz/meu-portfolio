@@ -27,10 +27,3 @@ O botão de download usa o currículo fornecido em `assets/cv/gabriel-balbino-cv
 4. Em Build and deployment, escolha Deploy from a branch.
 5. Selecione `main` e `/ (root)`, depois Save.
 
-## Antes de divulgar
-- Confira se o WhatsApp está correto.
-- Revise as descrições e o status de cada projeto.
-- Adicione links individuais para os projetos quando os repositórios/demos estiverem públicos.
-- Confirme os nomes oficiais e certificados dos cursos.
-
-Não há backend nem chaves de API no portfólio estático. Não publique segredos em repositórios públicos.
