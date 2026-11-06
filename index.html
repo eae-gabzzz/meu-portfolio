@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#03060b">
+<meta name="description" content="Portfólio de Gabriel Balbino Malaquias — desenvolvimento, automação, dados e inteligência artificial.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gabriel Balbino Malaquias — Portfólio">
+<meta property="og:description" content="Engenharia de Software, desenvolvimento, automação, dados e inteligência artificial.">
+<link rel="icon" type="image/svg+xml" href="assets/gb-mark.svg">
+<title>Gabriel Balbino — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="visual-upgrade.css"><script src="script.js" defer></script>
+</head>
+<body>
+<div class="page-loader" aria-hidden="true"><span>GB<span>.</span></span><i></i><small data-i18n="loader_status">PREPARANDO EXPERIÊNCIA</small></div>
+<div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div><div class="progress" aria-hidden="true"></div>
+<header class="header">
+  <a class="logo" href="#home" aria-label="Gabriel Balbino — início">GB<span>.</span></a>
+  <button class="menu-toggle" aria-label="Abrir menu" aria-controls="site-nav" data-i18n-aria="menu_open"><i></i><i></i></button>
+  <nav class="nav" id="site-nav">
+    <a href="#about" data-i18n="nav_about">Sobre</a><a href="#skills" data-i18n="nav_skills">Stack</a><a href="#experience" data-i18n="nav_exp">Experiência</a><a href="#projects" data-i18n="nav_projects">Projetos</a><a href="#terminal" data-i18n="nav_terminal">Terminal</a><a href="#education" data-i18n="nav_education">Formação</a><a href="#contact" class="nav-cta" data-i18n="nav_contact">Contato ↗</a>
+  </nav>
+  <div class="header-tools"><button class="tool-btn" id="langToggle" aria-label="Mudar idioma" data-i18n-aria="language_toggle">PT <span>/</span> EN</button><button class="theme-btn" id="themeToggle" aria-label="Alternar tema" data-i18n-aria="theme_toggle"><span class="theme-icon">☼</span></button></div>
+</header>
+
+<main>
+<section class="hero section-shell" id="home">
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><span class="live-dot"></span><span data-i18n="hero_eyebrow">DESENVOLVIMENTO • AUTOMAÇÃO • IA</span></div>
+    <div class="availability"><span class="availability-pulse"></span><span data-i18n="hero_availability">DISPONÍVEL PARA OPORTUNIDADES</span><b>●</b></div>
+    <p class="hero-hi" data-i18n="hero_hi">Olá, eu sou</p>
+    <h1 aria-label="Gabriel Balbino Malaquias">Gabriel<br><em>Balbino.</em><small class="hero-surname">MALAQUIAS</small></h1>
+    <div class="hero-title"><span class="slash">/</span><span id="typed"></span><b class="caret">_</b></div>
+    <p class="hero-desc" data-i18n="hero_desc">Estudante de Engenharia de Software, curioso por tecnologia e motivado por transformar desafios reais em soluções digitais.</p>
+    <div class="hero-buttons"><a class="btn btn-primary" href="#projects"><span data-i18n="hero_btn1">Explorar projetos</span><b>↘</b></a><a class="btn btn-outline" href="#contact"><span data-i18n="hero_btn2">Vamos conversar</span><b>↗</b></a></div>
+    <div class="hero-foot"><span data-i18n="hero_location">BRAZIL · SP</span><span class="foot-rule"></span><span data-i18n="hero_building">ALWAYS BUILDING</span></div>
+  </div>
+  <div class="hero-art reveal" id="portraitStage">
+    <div class="art-grid"></div><div class="halo halo-a"></div><div class="halo halo-b"></div>
+    <div class="hero-orbit" aria-hidden="true"></div>
+    <div class="terminal-window" aria-label="Gabriel profile information">
+      <div class="terminal-top"><span></span><span></span><span></span><b>GABRIEL.PROFILE</b><i data-i18n="terminal_online">SYSTEM ONLINE</i></div>
+      <div class="terminal-code">
+        <p><b data-i18n="profile_status_label">Status:</b> <em data-i18n="profile_status">Open to opportunities</em></p>
+        <p><b data-i18n="profile_focus_label">Focus:</b> <em data-i18n="profile_focus">Software Engineering</em></p>
+        <p><b data-i18n="profile_interest_label">Interest:</b> <em data-i18n="profile_interest">AI & Automation</em></p>
+      </div>
+      <div class="terminal-foot"><span><i></i><span data-i18n="terminal_ready">PERFIL CARREGADO</span></span><span>100%</span></div>
+    </div>
+    <div class="portrait-subject"><img class="portrait-cutout" src="assets/gabriel.png" alt="Retrato de Gabriel Balbino" width="747" height="1024" decoding="async" fetchpriority="high"></div>
+    <div class="portrait-id"><span class="live-dot"></span><span>GABRIEL BALBINO</span><small>SOFTWARE · DATA · IA</small></div>
+    <div class="float-chip chip-code"><span>01</span> PYTHON · WEB · AI</div>
+    <div class="float-chip chip-status"><i></i><span data-i18n="hero_status">Construindo coisas úteis</span></div>
+    <div class="float-chip chip-coordinate"><span data-i18n="hero_country_label">LOCALIZAÇÃO</span><b data-i18n="hero_country">BRASIL</b></div>
+    <div class="orbit-arrow">↗</div>
+    <div class="art-caption">FIG. 001 <span>—</span> THE MAKER MINDSET</div>
+  </div>
+  <a class="scroll-indicator" href="#about"><span></span><small data-i18n="scroll">SCROLL PARA EXPLORAR</small></a>
+</section>
+
+<div class="ticker"><div class="ticker-track"><span>VIBE CODING</span><b>✳</b><span>SOFTWARE</span><b>✳</b><span>DATA</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>AUTOMATION</span><b>✳</b><span>VIBE CODING</span><b>✳</b><span>SOFTWARE</span><b>✳</b><span>DATA</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>AUTOMATION</span><b>✳</b></div></div>
+
+<section class="section section-shell" id="about">
+  <div class="section-label"><span>01 / <b data-i18n="label_about">SOBRE MIM</b></span><i></i><small>THE STORY SO FAR</small></div>
+  <div class="about-layout"><h2 data-i18n="about_title">Curiosidade que<br><em>vira construção.</em></h2><div class="about-copy">
+    <p data-i18n="about_p1">Sou Gabriel Balbino Malaquias, estudante de Engenharia de Software na UniCesumar e profissional da área de Compras na Everest Engenharia. Minha trajetória mistura experiência prática, visão de processos e paixão por tecnologia.</p>
+    <p data-i18n="about_p2">Gosto de aprender construindo: exploro programação, automação, análise de dados e inteligência artificial para criar ferramentas que resolvam problemas de verdade. Também curto <strong>vibe coding</strong> — transformar ideias em protótipos, testar rápido e evoluir a solução.</p>
+    <div class="about-stats"><div><strong>2026</strong><small data-i18n="stat_degree">Graduação em andamento</small></div><div><strong>5</strong><small data-i18n="stat_projects">Projetos pessoais</small></div><div><strong>∞</strong><small data-i18n="stat_learning">Vontade de aprender</small></div></div>
+  </div></div>
+</section>
+
+<section class="section section-muted" id="skills"><div class="section-shell">
+  <div class="section-label"><span>02 / <b data-i18n="label_skills">STACK & FERRAMENTAS</b></span><i></i><small>TOOLS OF THE TRADE</small></div>
+  <div class="section-head"><h2 data-i18n="skills_title">Tecnologias para<br><em>tirar ideias do papel.</em></h2><p data-i18n="skills_desc">Conhecimentos que venho estudando e aplicando em projetos. A lista representa minha jornada atual — sempre aprendendo e aprofundando.</p></div>
+  <div class="skill-groups">
+    <div class="skill-category"><h3 data-i18n="category_programming">PROGRAMAÇÃO</h3><div class="skill-category-grid">
+      <article class="skill-card tilt-card"><span class="skill-symbol">Py</span><small>01 / CODE</small><h4>Python</h4><p data-i18n="skill_python">Programação e criação de soluções.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">C</span><small>02 / CODE</small><h4>C</h4><p data-i18n="skill_c">Fundamentos de programação.</p></article>
+    </div></div>
+    <div class="skill-category"><h3 data-i18n="category_web">DESENVOLVIMENTO WEB</h3><div class="skill-category-grid">
+      <article class="skill-card tilt-card"><span class="skill-symbol">JS</span><small>03 / WEB</small><h4>JavaScript</h4><p data-i18n="skill_js">Interatividade para experiências web.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">&lt;/&gt;</span><small>04 / WEB</small><h4>HTML</h4><p data-i18n="skill_html">Estruturação de páginas web.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">#</span><small>05 / WEB</small><h4>CSS</h4><p data-i18n="skill_css">Estilo e composição de interfaces.</p></article>
+    </div></div>
+    <div class="skill-category"><h3 data-i18n="category_data">DADOS & ANÁLISE</h3><div class="skill-category-grid">
+      <article class="skill-card tilt-card"><span class="skill-symbol">Pd</span><small>06 / DATA</small><h4>Pandas</h4><p data-i18n="skill_pandas">Análise e manipulação de dados.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">X</span><small>10 / OFFICE</small><h4>Excel</h4><p data-i18n="skill_excel">Planilhas e organização de dados.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">BI</span><small>13 / DATA</small><h4>Power BI</h4><p data-i18n="skill_powerbi">Visualização e análise de dados.</p></article>
+    </div></div>
+    <div class="skill-category"><h3 data-i18n="category_apps">APLICAÇÕES & APIs</h3><div class="skill-category-grid">
+      <article class="skill-card tilt-card"><span class="skill-symbol">St</span><small>07 / APPS</small><h4>Streamlit</h4><p data-i18n="skill_streamlit">Aplicações interativas com Python.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">↗</span><small>14 / CONNECT</small><h4>APIs</h4><p data-i18n="skill_apis">Integração entre aplicações.</p></article>
+    </div></div>
+    <div class="skill-category"><h3 data-i18n="category_tools">FERRAMENTAS</h3><div class="skill-category-grid">
+      <article class="skill-card tilt-card"><span class="skill-symbol">⌘</span><small>08 / VERSION</small><h4>Git</h4><p data-i18n="skill_git">Versionamento de projetos.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">GH</span><small>09 / VERSION</small><h4>GitHub</h4><p data-i18n="skill_github">Repositórios e colaboração.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">W</span><small>11 / OFFICE</small><h4>Word</h4><p data-i18n="skill_word">Documentos e edição de texto.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">P</span><small>12 / OFFICE</small><h4>PowerPoint</h4><p data-i18n="skill_powerpoint">Apresentações e comunicação visual.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">VS</span><small>20 / EDITOR</small><h4>VS Code</h4><p data-i18n="skill_vscode">Ambiente de desenvolvimento.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">O</span><small>21 / OFFICE</small><h4 data-i18n="skill_office_title">Pacote Office</h4><p data-i18n="skill_office">Ferramentas de produtividade.</p></article>
+    </div></div>
+    <div class="skill-category"><h3 data-i18n="category_ai">IA & PRODUTIVIDADE</h3><div class="skill-category-grid">
+      <article class="skill-card tilt-card"><span class="skill-symbol">✳</span><small>15 / AI</small><h4 data-i18n="skill_ai_title">Inteligência Artificial</h4><p data-i18n="skill_ai_desc">Exploração de ferramentas de IA.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">V/</span><small>16 / METHOD</small><h4>Vibe Coding</h4><p data-i18n="skill_vibe">Prototipação e evolução de ideias.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">⚙</span><small>17 / FLOW</small><h4 data-i18n="skill_automation_title">Automação</h4><p data-i18n="skill_automation">Otimização de tarefas e processos.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">G</span><small>18 / AI</small><h4>Google GenAI</h4><p data-i18n="skill_genai">Ferramentas generativas do Google.</p></article>
+      <article class="skill-card tilt-card"><span class="skill-symbol">&gt;</span><small>19 / PRACTICE</small><h4>Prompting</h4><p data-i18n="skill_prompting">Criação e refinamento de instruções.</p></article>
+    </div></div>
+  </div>
+  <p class="skill-disclaimer"><span>✳</span><span data-i18n="skill_note">Conhecimentos em diferentes níveis de prática. Prefiro mostrar o que estou aprendendo com transparência, em vez de inventar porcentagens de domínio.</span></p>
+</div></section>
+
+<section class="section section-shell" id="experience">
+  <div class="section-label"><span>03 / <b data-i18n="label_exp">EXPERIÊNCIA</b></span><i></i><small data-i18n="experience_kicker">NA PRÁTICA · EXPERIÊNCIA REAL</small></div>
+  <div class="section-head"><h2 data-i18n="exp_title">Experiência real.<br><em>Visão de solução.</em></h2><p data-i18n="exp_desc">Minha experiência profissional fortalece competências que também fazem diferença no desenvolvimento: análise, comunicação, negociação e melhoria contínua.</p></div>
+  <article class="job-card"><div class="job-head"><div><small data-i18n="job_period">11/02/2026 — 07/12/2026</small><h3>Everest Engenharia</h3><p data-i18n="job_role">Jovem Aprendiz · Compras</p></div><span class="job-mark">EV / 01</span></div>
+    <p class="job-summary" data-i18n="job_summary">Atuação em processos de compras ligados a infraestrutura viária e telecomunicações, com contato com fornecedores, cotações, negociações e apoio às demandas de diferentes obras.</p>
+    <div class="wins">
+      <div><b>01</b><h4 data-i18n="win1_title">Negociação estratégica</h4><p data-i18n="win1_desc">Comparei cotações, negociei contrapropostas e ajudei a obter uma condição final muito mais vantajosa que a proposta inicial para uma compra de materiais.</p></div>
+      <div><b>02</b><h4 data-i18n="win2_title">Organização de informações</h4><p data-i18n="win2_desc">Acompanhei retornos de aproximadamente 120 fornecedores em um levantamento relacionado à Reforma Tributária.</p></div>
+      <div><b>03</b><h4 data-i18n="win3_title">Otimização de fretes</h4><p data-i18n="win3_desc">Sugeri consolidar entregas pequenas e recorrentes em um único frete, ideia adotada para reduzir custos logísticos.</p></div>
+      <div><b>04</b><h4 data-i18n="win4_title">Iniciativa</h4><p data-i18n="win4_desc">Contribuí na busca e negociação de brindes para a CIPAT, articulando alternativas com fornecedores.</p></div>
+    </div>
+  </article>
+  <article class="job-card previous-job-card"><div class="job-head"><div><small data-i18n="previous_job_period">02/02/2024 — 22/12/2025</small><h3>Colégio Adventista de São Roque</h3><p data-i18n="previous_job_role">Assistente Administrativo</p></div><span class="job-mark">CASR / 02</span></div>
+    <p class="job-summary" data-i18n="previous_job_summary">Apoio a rotinas organizacionais, controle de documentos, acompanhamento de processos internos e suporte às atividades administrativas da instituição.</p>
+  </article>
+</section>
+
+<section class="section section-muted" id="projects"><div class="section-shell">
+  <div class="section-label"><span>04 / <b data-i18n="label_projects">PROJETOS</b></span><i></i><small>SELECTED EXPERIMENTS</small></div>
+  <div class="section-head"><h2 data-i18n="projects_title">Problemas diferentes.<br><em>Soluções em construção.</em></h2><p data-i18n="projects_desc">Projetos pessoais que mostram meu interesse em criar aplicações úteis, explorar IA e experimentar novas ideias.</p></div>
+  <div class="projects">
+    <article class="project project-large" data-project="bia"><div class="project-visual visual-bia"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i><span>BIA / SALES ASSISTANT</span></div><div class="mock-body"><div class="mock-sidebar"></div><div class="mock-content"><small>ASK YOUR DATA</small><b data-i18n="bia_mock_title">O que os números<br>estão dizendo?</b><div class="mock-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div><span data-i18n="bia_mock_prompt">› Pergunte sobre suas vendas...</span></div></div></div></div><div class="project-info"><div class="project-topline"><span>01 — DATA + AI</span><em class="state-done" data-i18n="state_built">DESENVOLVIDO</em></div><h3>BIA — Balbino IA</h3><p data-i18n="bia_desc">Aplicação que permite conversar com dados de vendas em CSV e Excel usando linguagem natural e IA generativa.</p><div class="tags"><span>Python</span><span>Streamlit</span><span>Pandas</span><span>Google GenAI</span></div><button class="project-details-btn" type="button" data-i18n="project_details">Ver detalhes <span>↗</span></button></div></article>
+    <article class="project" data-project="finance"><div class="project-visual visual-finance"><div class="finance-ui"><span>MY FINANCE / OVERVIEW</span><b>R$ ———</b><div class="finance-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>INCOME · EXPENSES · GOALS</small></div></div><div class="project-info"><div class="project-topline"><span>02 — FINTECH</span><em class="state-progress" data-i18n="state_personal">PROJETO PESSOAL</em></div><h3 data-i18n="finance_title">Aplicativo de Finanças</h3><p data-i18n="finance_desc">Aplicativo pessoal para acompanhar finanças e organizar informações do dia a dia.</p><div class="tags"><span data-i18n="finance_tag_1">App</span><span data-i18n="finance_tag_2">Dados</span><span data-i18n="finance_tag_3">Organização</span></div><button class="project-details-btn" type="button" data-i18n="project_details">Ver detalhes <span>↗</span></button></div></article>
+    <article class="project" data-project="environment"><div class="project-visual visual-env"><div class="env-ui"><span>ENVIRONMENT CONTROL</span><div class="env-row"><i></i><b></b><small data-i18n="environment_mock_1">AMBIENTE 01</small></div><div class="env-row"><i></i><b></b><small data-i18n="environment_mock_2">AMBIENTE 02</small></div><div class="env-row"><i></i><b></b><small data-i18n="environment_mock_3">AMBIENTE 03</small></div></div></div><div class="project-info"><div class="project-topline"><span>03 — MANAGEMENT</span><em class="state-progress" data-i18n="state_personal">PROJETO PESSOAL</em></div><h3 data-i18n="env_title">Controle de Gestão de Ambiente</h3><p data-i18n="env_desc">Ferramenta para acompanhar e organizar a gestão de ambientes e suas informações.</p><div class="tags"><span data-i18n="env_tag_1">Gestão</span><span data-i18n="env_tag_2">Controle</span><span data-i18n="env_tag_3">Software</span></div><button class="project-details-btn" type="button" data-i18n="project_details">Ver detalhes <span>↗</span></button></div></article>
+    <article class="project" data-project="human"><div class="project-visual visual-human"><div class="human-ui"><div class="scan">◉</div><b>HUMAN <span>OR</span> AI?</b><small>IDENTITY / DETECTION EXPERIMENT</small><div class="scan-line"></div></div></div><div class="project-info"><div class="project-topline"><span>04 — AI EXPERIMENT</span><em class="state-progress" data-i18n="state_personal">PROJETO PESSOAL</em></div><h3 data-i18n="human_title">Humano ou Inteligência Artificial?</h3><p data-i18n="human_desc">Experimento interativo com a proposta de identificar se um conteúdo ou resposta foi criado por uma pessoa ou por IA.</p><div class="tags"><span data-i18n="human_tag_1">IA</span><span data-i18n="human_tag_2">Classificação</span><span data-i18n="human_tag_3">Experimento</span></div><button class="project-details-btn" type="button" data-i18n="project_details">Ver detalhes <span>↗</span></button></div></article>
+    <article class="project" data-project="phb"><div class="project-visual visual-phb"><div class="phb-ui"><span data-i18n="phb_mock_title">PHB / ODONTOLOGIA</span><b data-i18n="phb_mock_slogan">Seu sorriso,<br>nosso cuidado.</b><small data-i18n="phb_mock_values">SAÚDE · CONFIANÇA · BEM-ESTAR</small></div></div><div class="project-info"><div class="project-topline"><span>05 — WEB DESIGN</span><em class="state-personal" data-i18n="state_experiment">EXPERIMENTO</em></div><h3>Doutor PHB</h3><p data-i18n="phb_desc">Projeto de presença digital para uma clínica odontológica, com foco em apresentação dos serviços e experiência de navegação.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Web</span></div><button class="project-details-btn" type="button" data-i18n="project_details">Ver detalhes <span>↗</span></button></div></article>
+  </div>
+  <p class="project-note" data-i18n="project_note">As descrições são resumidas. Conforme os projetos forem publicados, adicionarei demonstrações, repositórios e detalhes técnicos.</p>
+</div></section>
+
+<section class="terminal-section section" id="terminal"><div class="section-shell terminal-shell">
+  <div class="section-label"><span>05 / <b data-i18n="terminal_label">TERMINAL INTERATIVO</b></span><i></i><small>INPUT / OUTPUT</small></div>
+  <div class="terminal-intro"><h2 data-i18n="terminal_title">Um pouco sobre mim,<br><em>direto do terminal.</em></h2><p data-i18n="terminal_desc">Experimente um comando. O terminal responde com informações deste portfólio.</p></div>
+  <div class="interactive-terminal">
+    <div class="interactive-terminal-bar"><span></span><span></span><span></span><b>gabriel@portfolio: ~</b><i data-i18n="terminal_online">SYSTEM ONLINE</i></div>
+    <div class="terminal-output" id="terminalOutput" role="log" aria-live="polite" aria-relevant="additions text"><p data-i18n="terminal_welcome">Terminal pronto. Digite <code>help</code> para ver os comandos.</p></div>
+    <form class="terminal-form" id="terminalForm"><label for="terminalInput" data-i18n-aria="terminal_input_aria" aria-label="Comando do terminal"><span aria-hidden="true">&gt;</span></label><input id="terminalInput" name="command" type="text" autocomplete="off" spellcheck="false" aria-label="Comando do terminal" data-i18n-aria="terminal_input_aria" data-i18n-placeholder="terminal_placeholder" placeholder="Digite um comando..." maxlength="40"><button type="submit" data-i18n="terminal_run">Executar</button></form>
+  </div>
+  <div class="terminal-suggestions" aria-label="Sugestões de comandos" data-i18n-aria="terminal_suggestions_aria"><span data-i18n="terminal_try">TENTE:</span><button type="button" data-command="help">help</button><button type="button" data-command="whoami">whoami</button><button type="button" data-command="about">about</button><button type="button" data-command="projects">projects</button><button type="button" data-command="skills">skills</button><button type="button" data-command="contact">contact</button></div>
+</div></section>
+
+<section class="section section-shell" id="education"><div class="section-label"><span>06 / <b data-i18n="label_education">FORMAÇÃO</b></span><i></i><small>LEARNING NEVER STOPS</small></div>
+  <div class="section-head"><h2 data-i18n="education_title">Construindo minha<br><em>base todos os dias.</em></h2><p data-i18n="education_desc">Formação acadêmica e cursos complementares que acompanham minha evolução em tecnologia e no ambiente profissional.</p></div>
+  <div class="education-grid education-timeline"><div class="education-main"><small data-i18n="degree_period">2026 — EM ANDAMENTO</small><h3 data-i18n="degree_title">Engenharia de Software</h3><p data-i18n="degree_detail">UniCesumar · Graduação</p><span class="edu-badge">● <span data-i18n="ongoing">EM ANDAMENTO</span></span></div><div class="education-main"><small data-i18n="languages_label">IDIOMAS</small><h3 data-i18n="languages_title">Português e inglês básico</h3><p data-i18n="languages_detail">Português · Inglês básico</p><span class="edu-badge"><span data-i18n="language_level">INGLÊS BÁSICO</span></span></div></div>
+  <div class="cert-heading"><h3 data-i18n="cert_title">Cursos & certificações</h3><span>CONTINUOUS LEARNING / 2026</span></div>
+  <div class="cert-grid">
+    <div class="cert"><span>01 / SENAI</span><h4 data-i18n="cert_ai">Programação Aplicada à IA — ChatGPT</h4><small class="cert-done" data-i18n="completed">✓ CONCLUÍDO</small></div>
+    <div class="cert"><span>02 / FUNDAMENTOS</span><h4 data-i18n="cert_excel">Excel Básico</h4><small data-i18n="course_listed">CURSO COMPLEMENTAR</small></div>
+    <div class="cert"><span>03 / COLÉGIO ADVENTISTA</span><h4 data-i18n="cert_marketing">Marketing e Administração Básicos</h4><small data-i18n="course_listed">CURSO COMPLEMENTAR</small></div>
+    <div class="cert"><span>04 / SENAI</span><h4 data-i18n="cert_safety">Segurança do Trabalho — Competência Transversal</h4><small data-i18n="course_listed">CURSO COMPLEMENTAR</small></div>
+    <div class="cert"><span>05 / SENAI</span><h4 data-i18n="cert_ethics">Ética na Inteligência Artificial</h4><small data-i18n="course_listed">CURSO COMPLEMENTAR</small></div>
+    <div class="cert"><span>06 / SUSTENTABILIDADE</span><h4 data-i18n="cert_circular">Economia Circular</h4><small data-i18n="course_listed">CURSO COMPLEMENTAR</small></div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact"><div class="section-shell contact-wrap">
+  <div class="section-label"><span>07 / <b data-i18n="label_contact">CONTATO</b></span><i></i><small>LET'S MAKE IT HAPPEN</small></div>
+  <p class="contact-overline" data-i18n="contact_overline">OPORTUNIDADES · COLABORAÇÕES · IDEIAS</p><h2 data-i18n="contact_title">Bora transformar<br><em>ideias em projetos?</em></h2><p class="contact-desc" data-i18n="contact_desc">Estou aberto a oportunidades, conexões e projetos nas áreas de tecnologia, desenvolvimento, dados e automação.</p>
+  <div class="contact-actions"><button class="cv-download" id="cvDownload" type="button" data-cv-ready="true"><span data-i18n="cv_download">BAIXAR CURRÍCULO</span><b>↓</b></button><p class="cv-status" id="cvStatus" role="status" data-i18n="cv_available">Meu currículo está pronto para download.</p></div>
+  <div class="contact-links"><a href="https://wa.me/5511996100032" target="_blank" rel="noreferrer"><span>WHATSAPP</span><b>+55 11 99610-0032</b><i>↗</i></a><a href="https://www.instagram.com/iae_gabzzz/" target="_blank" rel="noreferrer"><span>INSTAGRAM</span><b>@iae_gabzzz</b><i>↗</i></a><a href="https://www.linkedin.com/in/gbzzz/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><b>/in/gbzzz</b><i>↗</i></a><a href="https://github.com/eae-gabzzz" target="_blank" rel="noreferrer"><span>GITHUB</span><b>@eae-gabzzz</b><i>↗</i></a></div>
+</div></section>
+</main>
+<dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle"><button class="dialog-close" type="button" aria-label="Fechar" data-i18n-aria="dialog_close">×</button><div class="dialog-visual" id="dialogVisual"></div><div class="dialog-content"><span class="dialog-kicker" data-i18n="project_details_kicker">PROJECT / DETAILS</span><h2 id="dialogTitle"></h2><div class="dialog-facts"><div><h3 data-i18n="dialog_scope">Objetivo</h3><p id="dialogScope"></p></div><div><h3 data-i18n="dialog_technology">Tecnologias informadas</h3><div class="tags" id="dialogTags"></div></div><div><h3 data-i18n="dialog_approach">Como foi desenvolvido</h3><p id="dialogApproach"></p></div><div><h3 data-i18n="dialog_more">Mais informações</h3><p data-i18n="dialog_pending">Ainda não há mais informações ou links de demonstração cadastrados.</p></div></div></div></dialog>
+<footer class="footer"><div class="section-shell footer-inner"><a class="logo" href="#home" aria-label="Gabriel Balbino — início">GB<span>.</span></a><p>© <span id="year"></span> GABRIEL BALBINO MALAQUIAS</p><a href="#home" data-i18n="back_top">VOLTAR AO TOPO ↑</a></div></footer>
+<a class="back-to-top" href="#home" aria-label="Voltar ao topo" data-i18n-aria="back_top_aria">↑</a>
+</body></html>
