@@ -2137,3 +2137,253 @@ body.light {
     grid-template-columns: 1fr;
   }
 }
+
+main {
+  padding-top: 96px;
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 14px;
+  left: 50%;
+  width: min(1220px, calc(100% - 40px));
+  height: 68px;
+  padding: 0 24px;
+  overflow: visible;
+  border: 1px solid color-mix(in srgb, var(--text) 13%, transparent);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--panel) 76%, transparent), color-mix(in srgb, var(--bg) 67%, transparent));
+  box-shadow:
+    0 14px 42px rgba(0, 0, 0, .2),
+    inset 0 1px 0 color-mix(in srgb, var(--text) 17%, transparent),
+    inset 0 -1px 0 color-mix(in srgb, var(--text) 5%, transparent);
+  backdrop-filter: blur(28px) saturate(175%);
+  -webkit-backdrop-filter: blur(28px) saturate(175%);
+  transform: translateX(-50%);
+  isolation: isolate;
+}
+
+.header::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(112deg, color-mix(in srgb, var(--text) 7%, transparent), transparent 38%, transparent 72%, color-mix(in srgb, var(--blue) 8%, transparent));
+  content: "";
+  pointer-events: none;
+}
+
+.header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header .nav {
+  gap: clamp(12px, 1.6vw, 22px);
+}
+
+.header .nav-cta {
+  padding: 8px 13px;
+  border: 1px solid color-mix(in srgb, var(--blue) 36%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--blue) 9%, transparent);
+  transition: background .25s ease, border-color .25s ease, transform .25s ease;
+}
+
+.header .nav-cta:hover {
+  border-color: color-mix(in srgb, var(--blue) 68%, var(--line));
+  background: color-mix(in srgb, var(--blue) 16%, transparent);
+  transform: translateY(-1px);
+}
+
+.tool-btn,
+.theme-btn,
+.menu-toggle {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--panel) 56%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 12%, transparent);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  transition: border-color .25s ease, background .25s ease, transform .25s ease;
+}
+
+.tool-btn:hover,
+.theme-btn:hover,
+.menu-toggle:hover {
+  border-color: color-mix(in srgb, var(--blue) 55%, var(--line));
+  background: color-mix(in srgb, var(--blue) 14%, var(--panel));
+  transform: translateY(-1px);
+}
+
+.btn,
+.cv-download,
+.project-details-btn {
+  border-radius: 999px;
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+
+.btn-primary {
+  border: 1px solid color-mix(in srgb, var(--text) 23%, transparent);
+  background: linear-gradient(140deg, color-mix(in srgb, var(--blue) 83%, white 17%), color-mix(in srgb, var(--blue) 72%, var(--panel)));
+  color: var(--text);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 35%, transparent), 0 8px 28px color-mix(in srgb, var(--blue) 17%, transparent);
+}
+
+.btn-outline {
+  border: 1px solid color-mix(in srgb, var(--text) 16%, var(--line));
+  background: color-mix(in srgb, var(--panel) 52%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 11%, transparent);
+}
+
+.project {
+  border-radius: 20px;
+  border-color: color-mix(in srgb, var(--text) 12%, var(--line));
+  background: linear-gradient(145deg, color-mix(in srgb, var(--panel) 78%, transparent), color-mix(in srgb, var(--bg) 90%, transparent));
+  box-shadow: 0 18px 48px rgba(0, 0, 0, .2), inset 0 1px 0 color-mix(in srgb, var(--text) 9%, transparent);
+  backdrop-filter: blur(22px) saturate(145%);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+  isolation: isolate;
+}
+
+.project::before,
+.project::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.project::before {
+  background: radial-gradient(440px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--cyan) 17%, transparent), transparent 72%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.project::after {
+  inset: -65% -35%;
+  background: linear-gradient(105deg, transparent 42%, color-mix(in srgb, var(--text) 8%, transparent) 50%, transparent 58%);
+  transform: translateX(-75%) rotate(8deg);
+  transition: transform .9s cubic-bezier(.2, .7, .2, 1);
+}
+
+.project > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project:hover {
+  border-color: color-mix(in srgb, var(--cyan) 40%, var(--line));
+  box-shadow: 0 28px 64px rgba(0, 0, 0, .28), 0 0 30px color-mix(in srgb, var(--blue) 10%, transparent), inset 0 1px 0 color-mix(in srgb, var(--text) 18%, transparent);
+}
+
+.project:hover::before {
+  opacity: 1;
+}
+
+.project:hover::after {
+  transform: translateX(75%) rotate(8deg);
+}
+
+.project-info .tags span {
+  border-radius: 999px;
+  border-color: color-mix(in srgb, var(--text) 13%, var(--line));
+  background: color-mix(in srgb, var(--panel) 48%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.project-details-btn {
+  padding: 8px 13px;
+  border: 1px solid color-mix(in srgb, var(--text) 14%, var(--line));
+  background: color-mix(in srgb, var(--panel) 52%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 9%, transparent);
+}
+
+.project-details-btn:hover,
+.project-details-btn:focus-visible {
+  border-color: color-mix(in srgb, var(--cyan) 54%, var(--line));
+  background: color-mix(in srgb, var(--blue) 10%, var(--panel));
+}
+
+.cv-download {
+  border-color: color-mix(in srgb, var(--text) 18%, var(--line));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--blue) 20%, var(--panel)), color-mix(in srgb, var(--panel) 70%, transparent));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 17%, transparent), 0 8px 28px rgba(0, 0, 0, .12);
+}
+
+.back-to-top {
+  border-radius: 50%;
+  border-color: color-mix(in srgb, var(--text) 18%, var(--line));
+  background: color-mix(in srgb, var(--panel) 62%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 14%, transparent), 0 12px 30px rgba(0, 0, 0, .18);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+}
+
+body.light .header {
+  border-color: color-mix(in srgb, var(--blue) 18%, transparent);
+  box-shadow: 0 14px 42px rgba(25, 57, 97, .13), inset 0 1px 0 rgba(255, 255, 255, .78), inset 0 -1px 0 rgba(25, 57, 97, .06);
+}
+
+body.light .project {
+  box-shadow: 0 18px 48px rgba(25, 57, 97, .12), inset 0 1px 0 rgba(255, 255, 255, .62);
+}
+
+body.light .project:hover {
+  box-shadow: 0 28px 64px rgba(25, 57, 97, .18), 0 0 30px color-mix(in srgb, var(--blue) 12%, transparent), inset 0 1px 0 rgba(255, 255, 255, .82);
+}
+
+body.light .btn-primary {
+  color: #fff;
+}
+
+body.light .cv-download,
+body.light .back-to-top {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .75), 0 10px 28px rgba(25, 57, 97, .12);
+}
+
+@media (max-width: 680px) {
+  main {
+    padding-top: 78px;
+  }
+
+  .header {
+    top: 10px;
+    width: calc(100% - 20px);
+    height: 62px;
+    padding: 0 15px;
+    border-radius: 22px;
+  }
+
+  .header .nav {
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid color-mix(in srgb, var(--text) 14%, var(--line));
+    border-radius: 20px;
+    background: color-mix(in srgb, var(--panel) 82%, transparent);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, .22), inset 0 1px 0 color-mix(in srgb, var(--text) 12%, transparent);
+    backdrop-filter: blur(26px) saturate(165%);
+    -webkit-backdrop-filter: blur(26px) saturate(165%);
+  }
+
+  .header .nav-cta {
+    margin-top: 4px;
+  }
+
+  .hero {
+    padding-top: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project::before,
+  .project::after {
+    transition: none;
+  }
+}
